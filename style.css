@@ -10,16 +10,21 @@ a {
 
 body {
     overflow-x: hidden;
+    max-width: 1440px;
+    margin: 0 auto;
+    /* border: 2px solid blue; */
+
 }
 
 main {
-    width: 1160px;
+    /* width: 1160px; */
     margin: 0 auto;
+    /* border: 1px solid green; */
 }
 
 .decore {
     position: absolute;
-    right: -120px;
+    right: -50px;
     top: -47px;
     z-index: -1;
 }
@@ -29,7 +34,7 @@ main {
 }
 
 header {
-    width: 1160px;
+    /* width: 1160px; */
     height: 40px;
     /* border: 1px solid black; */
     margin: 47px auto 0;
@@ -347,13 +352,11 @@ header {
 
 .form-box {
     display: flex;
-    /* align-items: center; */
-    width: 421px;
-    margin: 74px 30px 78px 300px;
-    border: 1px solid;
-    background-color: white;
+    width: max-content;
+    margin: 74px auto;
+    /* border: 1px solid; */
+    background-color: transparent;
     padding-left: 20px;
-    border-radius: 10px;
 }
 
 .subscribe {
@@ -374,22 +377,23 @@ header {
     z-index: 10;
 }
 
-
 .input-box {
     display: flex;
-    width: 1000px;
+    width: 400px;
     height: 68px;
     align-items: center;
-    /* border: 1px solid black; */
-    /* padding-left: 31px; */
-    /* margin-right: 0; */
+    padding-left: 25px;
+    background-color: white;
+    border-radius: 10px;    
+    overflow: hidden;
+
 }
 
 input {
-    width: 350px;
+    width: inherit;
     font-size: 14px;
     font-weight: 400;
-    height: 48px;
+    height: inherit;
     border: none;
     outline: none;
     padding-left: 14px;
@@ -424,6 +428,11 @@ input {
     height: 200px;
     width: 120px;
     margin-right: 70px;
+}
+
+.inner-footer-icons {
+    /* border: 1px solid red; */
+    width: max-content;
 }
 
 .inner-top-footer-jadoo {
@@ -474,8 +483,9 @@ input {
 }
 
 .inner-top-footer-icons {
-    width: 220px;
+    width: max-content;
     height: 146px;
+    text-align: center;
     /* border: 1px solid red; */
 }
 
@@ -487,6 +497,67 @@ input {
     /* margin-top: 18px; */
     margin-bottom: 12px;
 }
+
+/* Responsiveness for Laptop 1024px screen devices */
+@media screen  and (max-width: 1024px) {
+    .body {
+        margin: 0 10px;
+    }
+
+    .decore {
+        width: 60%;
+        right: 0;
+    }
+
+    main {
+        overflow-x: hidden;
+    }
+
+    .hero-section {
+       max-width: 1024px;
+    }
+    
+    .hero-right {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 10px 50px;
+        width: 583px;
+    }
+    
+    .hero-left {
+        width: 400px;
+        padding-right: 45px;
+    }
+    
+    .hero-sm-text {
+        font-size: 17px;
+    }
+    
+    .hero-big-text {
+        font-size: 64px;
+        font-weight: 700;
+    }
+    
+    .hero-text {
+        width: 370px;
+    }
+
+    .partners {
+        justify-content: center;
+    }
+
+    .partner-img {
+        margin-right: 30px;
+    }
+
+    .subscribe {
+        width: 900px;
+        margin: 0 auto;
+    }
+
+
+}
+
 
 /* Responsiveness for small mobile devices */
 @media screen and (max-width: 425px) {
