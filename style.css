@@ -13,6 +13,7 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     /* border: 2px solid blue; */
+    padding: 0 15px;
 
 }
 
@@ -42,7 +43,6 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-
 }
 
 .logo {
@@ -203,7 +203,7 @@ header {
 .card-bold-text {
     margin: 16px 0;
     font-size: 20px;
-    text-align: centre;
+    text-align: center;
 }
 
 .aero {
@@ -322,6 +322,7 @@ header {
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .partner-img {
@@ -502,6 +503,11 @@ input {
 @media screen  and (max-width: 1024px) {
     .body {
         margin: 0 10px;
+    }
+
+    header {
+        height: 40px;
+        margin: 47px auto 0;
     }
 
     .decore {
