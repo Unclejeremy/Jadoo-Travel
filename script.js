@@ -3,10 +3,10 @@ console.log("Jerry");
 
 
 let box = "Jerry";
-// alert(box);
+alert(box);
 
 box = "Cletus";
-alert(box);
+// alert(box);
 
 const pie = 3.142;
 pie = 23;
